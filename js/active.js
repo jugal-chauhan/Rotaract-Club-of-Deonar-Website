@@ -140,26 +140,26 @@
 
      $('.fb').animationCounter({
          start: 0,
-         end: 3,
+         end: 6499,
          step: 2,
-         delay: 300
+         delay: 200
      });
      $('.bike').animationCounter({
          start: 0,
-         end: 7500,
+         end: 500,
          step: 1,
          delay: 300,
      });
      $('.code').animationCounter({
          start: 0,
-         end: 22500,
-         step: 3,
-         delay: 300,
+         end: 100,
+         step: 2,
+         delay: 450,
      });
      $('.coffee').animationCounter({
          start: 0,
-         end: 30000,
-         step: 4,
-         delay: 300,
+         end: 40,
+         step: 1,
+         delay: 700,
      });
  });
