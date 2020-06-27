@@ -141,7 +141,7 @@
      $('.fb').animationCounter({
          start: 0,
          end: 6499,
-         step: 2,
+         step: 5,
          delay: 200
      });
      $('.bike').animationCounter({
