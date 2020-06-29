@@ -340,14 +340,6 @@
     text-align: center;
 }
 
-.deonar_culture h5 {
-    color: #3c354e;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-}
-
 .deonar_culture .events_single {
     /* margin: 60px 20px 0; */
 
@@ -1164,7 +1156,7 @@
 }
 
 .navbar {
-    overflow: hidden;
+    overflow: fixed;
     background-color: #333;
     /* position: fixed; */
     top: 0;
@@ -1240,13 +1232,9 @@
   img {
   width: 260px !important;
   height: 150px;
-    }
-    .rcdlogo{
-        height : 100px;
-    }
-
 }
 
+}
 
 
 
@@ -1280,9 +1268,11 @@ li a {
   display: block;
   padding: 8px;
 } */
-new-header{
+/* new-header{
   padding-left: 50px;
-}
+} */
+
+
 /*
 .vertical-center {
   margin: 0;
@@ -1292,8 +1282,36 @@ new-header{
   transform: translateY(-50%);
 } */
 
+
+/*
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  /* padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 14%; /* Four links of equal widths
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+} */
+
+
 .navbar-nav.navbar-center {
     position: absolute;
-    right: -15%;
+    right: -20%;
     transform: translatex(-50%);
 }
