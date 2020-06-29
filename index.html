@@ -47,14 +47,13 @@
     <div class="wrapper">
 
         <div class="main-logo">
-            <center><img src="img/black.png" ALIGN="center" alt=""></center>
+            <center><img src="img/black.png" class = "rcdlogo" ALIGN="center" height="auto" width="auto" alt=""></center>
         <div class="contact" style="vertical-align:middle;">
         <!-- Email: <a href="#">naman.as@somaiya.edu </a>
         Phone: <a href="#"> +919029085127 </a>
         <a href="#" class="join-us">JOIN US</a> -->
         </div>
     </div>
-
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- <a class="navbar-brand" href="#" >Navbar</a> -->
@@ -75,8 +74,32 @@
             </div>
             </nav>
             <div class="image-homepage">
-                <center><img src="img/finalbg.jpg" class="responsive" height="auto" width="auto"alt=""></center>
+                <center><img src="img/finalbg.jpg" class="responsive mySlides" height="auto" width="auto"alt=""></center>
+                <center><img src="img/ourteam/7.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
+                <center><img src="img/ourteam/16.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
             </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() 
+                {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) 
+                    {
+                        x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if(myIndex > x.length) 
+                    {
+                        myIndex = 1
+                    }    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 3000); // Change image every 2 seconds
+                }
+            </script>
+
         <!-- <section class="bg">
             <!-- <div class="container">
                 <div class="row">

@@ -1232,9 +1232,13 @@
   img {
   width: 260px !important;
   height: 150px;
-}
+    }
+    .rcdlogo{
+        height : 100px;
+    }
 
 }
+
 
 
 
