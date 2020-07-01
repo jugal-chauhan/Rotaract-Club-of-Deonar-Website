@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RC Deonar</title>
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <style>
+    .mySlides {display:none;}
+    </style> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
@@ -17,7 +20,21 @@
     <link rel="stylesheet" href="responsive.css">
 </head>
 
+<script>
+setTimeout(function() {
+    $('#mydiv').fadeOut('fast');
+}, 1000);
+setTimeout(function() {
+    $('#OverLay').fadeOut('fast');
+}, 1000);
+</script>
+
 <body>
+
+  <div id ="OverLay" ALIGN="center">
+      <center><img src = "img/black.png" ALIGN="center" id="mydiv"></center>
+  </div>
+
     <div class="warning">
         <div class="contact" style="background-color: black;">
             <center><a style="color:aliceblue" ALIGN="center">Do open using a laptop/desktop for the best experience</a></center>
@@ -78,34 +95,37 @@
                 </div>
             </div>
         </nav>
-        <div class="image-homepage w3-content w3-section">
-            <center><img src="img/slideshow/1.png" class="responsive mySlides w3-animate-right" height="auto" width="auto"alt=""></center>
-            <center><img src="img/slideshow/2.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/3.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/4.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/5.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/6.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/7.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/8.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+        <!-- image-homepage w3-content w3-section -->
+         <!-- class="responsive mySlides w3-animate-right" -->
+         <!-- class = "mySlides w3-animate-right" -->
+        <div class="w3-content w3-section">
+            <center><img src="img/slideshow/1.png" class="mySlides w3-animate-right" height="auto" width="auto"alt=""></center>
+            <center><img src="img/slideshow/2.png" class="mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/3.png" class="mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/4.png" class="mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/5.png" class="mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/6.png" class="mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/7.png" class="mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/8.png" class="mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
         </div>
         <script>
-            var myIndex = 0;
-            carousel();
-            
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}    
-              x[myIndex-1].style.display = "block";  
-              setTimeout(carousel, 2500);    
-            }
-        </script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}
+                      x[myIndex-1].style.display = "block";
+                      setTimeout(carousel, 2500);
+                    }
+                </script>
         <!-- <section class="bg">
-            <!-- <div class="container">
+             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <img src="img/finalbg.jpg" class="responsive" height="auto" width="auto"alt="">
@@ -379,6 +399,8 @@
                                         <li><a href=""><i class="material-icons">account_circle</i>Club President: Shivani Gole</a></li>
                                         <li><a href="mailto: jugaldc2000@gmail.com"><i class="material-icons">email</i>rcdsecretariat1@gmail.com</a></li>
                                         <li><a href=""><i class="material-icons">call</i>+91 9820115908</a></li>
+                                        <li><a href=""><i class="material-icons">home</i>Location</a></li>
+                                        <iframe src="https://www.google.com/maps/d/u/3/embed?mid=13fU_5GC3oURiHAieqeADGgaPndEw5IFJ" width="auto" height="auto"></iframe>
                                     </ul>
                                 </div>
                             </div>
