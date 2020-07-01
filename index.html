@@ -47,7 +47,7 @@
     <div class="wrapper">
 
         <div class="main-logo">
-            <center><img src="img/black.png" ALIGN="center" alt=""></center>
+            <center><img src="img/black.png" class = "rcdlogo" ALIGN="center" alt=""></center>
         <div class="contact" style="vertical-align:middle;">
         <!-- Email: <a href="#">naman.as@somaiya.edu </a>
         Phone: <a href="#"> +919029085127 </a>
@@ -78,36 +78,31 @@
                 </div>
             </div>
         </nav>
-        <div class="image-homepage">
-            <center><img src="img/slideshow/1.png" class="responsive mySlides" height="auto" width="auto"alt=""></center>
-            <center><img src="img/slideshow/2.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/3.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/4.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/5.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/6.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/7.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
-            <center><img src="img/slideshow/8.png" class = "mySlides" ALIGN="center" height="auto" width="auto" alt=""></center>
+        <div class="image-homepage w3-content w3-section">
+            <center><img src="img/slideshow/1.png" class="responsive mySlides w3-animate-right" height="auto" width="auto"alt=""></center>
+            <center><img src="img/slideshow/2.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/3.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/4.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/5.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/6.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/7.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
+            <center><img src="img/slideshow/8.png" class = "mySlides w3-animate-right" ALIGN="center" height="auto" width="auto" alt=""></center>
         </div>
         <script>
             var myIndex = 0;
             carousel();
-                
-            function carousel() 
-                {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) 
-                    {
-                        x[i].style.display = "none";  
-                    }
-                    myIndex++;
-                    if(myIndex > x.length) 
-                    {
-                        myIndex = 1
-                    }    
-                    x[myIndex-1].style.display = "block";  
-                    setTimeout(carousel, 2500); // Change image every 2 seconds
-                }
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2500);    
+            }
         </script>
         <!-- <section class="bg">
             <!-- <div class="container">
@@ -217,29 +212,29 @@
                     <div class="col-md-4 col-xs-12">
                         <div class="events_single">
                             <img src="img/culture/1.png" alt="">
-                            <p><span class="event_left"><i class="material-icons">access_time</i>2013-present</span><span class="event_right"><i class="material-icons">location_on</i>Deonar</span></p>
+                            <!-- <p><span class="event_left"><i class="material-icons">access_time</i>2013-present</span><span class="event_right"><i class="material-icons">location_on</i>Deonar</span></p> -->
                             <div class="clear"></div>
                             <h3>Ojas Joshi (PP 2015-16, DRR 20-21)</h3>
                             <h6>How does the Deonar experience add to my personal growth? What do I learn beyond resumes and credits of social work?</h6>
-                            <a href="culture1.html">view more</a>
+                            <h6><a href="culture1.html">view more</a></h6>
                         </div>
                     </div>
                     <div class="col-md-4 col-xs-12">
                         <div class="events_single">
                             <img src="img/culture/2.png" alt="">
-                            <p><span class="event_left"><i class="material-icons">access_time</i>time</span><span class="event_right"><i class="material-icons">location_on</i>Deonar</span></p>
+                            <!-- <p><span class="event_left"><i class="material-icons">access_time</i>time</span><span class="event_right"><i class="material-icons">location_on</i>Deonar</span></p> -->
                             <h3>Humans of RC Deonar</h3>
                             <h6>Humans of RC Deonar is an initiative to celebrate the people behind the scenes of our amazing projects! Here’s one amongst the hundreds of inspiring stories of RC Deonar. Visit our instagram page to know more.</h6>
-                            <a href="culture2.html">view more</a>
+                            <h6><a href="culture2.html">view more</a></h6>
                         </div>
                     </div>
                     <div class="col-md-4 col-xs-12">
                         <div class="events_single">
                             <img src="img/culture/3.png" alt="">
-                            <p><span class="event_left"><i class="material-icons">access_time</i>time</span><span class="event_right"><i class="material-icons">location_on</i>Deonar</span></p>
+                            <!-- <p><span class="event_left"><i class="material-icons">access_time</i>time</span><span class="event_right"><i class="material-icons">location_on</i>Deonar</span></p> -->
                             <h3>Festive Celebrations</h3>
                             <h6>From Diwali to Garba nights to Holi to Christmas. We celebrate it together like a family. Check out our social media handles to know more!</h6>
-                            <a href="#footer">click here to view</a>
+                            <h6><a href="https://www.facebook.com/rc.deonar">click here to view</a></h6>
                         </div>
                     </div>
                 </div>
@@ -254,7 +249,6 @@
                             <div class="item">
                                 <div class="text">
                                     <h3>DONATE FOR OUR CAUSE</h3>
-                                    <p>hcthfbtjbfjbrkjkjr</p>
                                     <h5 class="white-button"><a href="donate.html">DONATE NOW</a></h5>
                                     <h5><a href="#footer">CONTACT US</a></h5>
                                     <br>
